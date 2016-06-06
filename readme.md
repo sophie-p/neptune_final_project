@@ -20,15 +20,15 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Clytia MMP
+# Tropomyosin characterisation in a cnidarian
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+I would like to identify the Tropomyosin genes in the genome of a cnidarian, build a phylogeny of the tropomyosin of cnidarians and see whether the tropomyosin expression varies along the life cycle.
 
 The methods I will use to do this are...
 
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+The data I will use are genome and transcriptome data not yet published. 
 
 ## Methods
 
