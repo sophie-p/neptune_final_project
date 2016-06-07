@@ -20,15 +20,15 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Tropomyosin characterisation in a cnidarian
+# Building a phylogeny of cnidarians tropomyosin
 
 ## Introduction and Goals
 
-I would like to identify the Tropomyosin genes in the genome of a cnidarian, build a phylogeny of the tropomyosin of cnidarians and see whether the tropomyosin expression varies along the life cycle.
+I would like to build a phylogenetic tree of the cnidarians tropomyosin to identify the tropomyosin genes of Nematostella vectensis. 
 
-The methods I will use to do this are...
+First I will look on the pubmed database for some well characterised tropomyosins sequences. Those sequences will be used as query for the blast search. Then I will write a program allowing to find tropomyosin genes from the genomes of several cnidarians (Nematostella, Hydra, Acropora..) using a blast search and save the sequences in a fasta file. Finally I will build the phylogenetic tree. 
 
-The data I will use are genome and transcriptome data not yet published. 
+The data I will use are published genome and transcriptome from cnidarians. 
 
 ## Methods
 
