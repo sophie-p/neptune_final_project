@@ -17,7 +17,8 @@ for line in InFile:
 	LineNumbre = LineNumbre + 1
 	if LineNumbre > 1:
 		if line not in lines_seen: # not a duplicate
-   			print(line)
+			print(line)
    			lines_seen.add(line)
 
+   			
 InFile.close()
