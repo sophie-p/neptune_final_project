@@ -2,14 +2,14 @@
 import re
 import sys
 
-#arguments = sys.argv
-#rint (arguments)
+arguments = sys.argv
+#print (arguments)
 
-#InFileName = sys.argv [1]
-#InFile = open ( InFileName, 'r' )
-
-InFileName = 'resultsblastxNvNvtest.out'
+InFileName = sys.argv [1]
 InFile = open ( InFileName, 'r' )
+
+#InFileName = 'resultsblastxNvNvtest.out'
+#InFile = open ( InFileName, 'r' )
 
 #LineNumbre = 0
 

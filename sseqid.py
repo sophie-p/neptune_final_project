@@ -3,7 +3,7 @@ import re
 import sys
 
 arguments = sys.argv
-print (arguments)
+#print (arguments)
 
 InFileName = sys.argv [1]
 InFile = open ( InFileName, 'r' )
