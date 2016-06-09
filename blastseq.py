@@ -42,26 +42,75 @@ InFileName2 = 'seqid.fa'
 InFile2 = open ( InFileName2, 'r' )
 
 LineNumbre = 0
-lines_seen = set() # holds lines already seen
+lines_seen = set() 
 for line in InFile2:
 	LineNumbre = LineNumbre + 1
 	if LineNumbre > 1:
-		if line not in lines_seen: # not a duplicate
+		if line not in lines_seen: 
 			print(line)
 			OutFile3.write (line + '\n')
 			lines_seen.add(line)
 
+OutFile3.close()
+
 InFileName3 = 'Nv.fa'
 InFile3 = open ( InFileName3, 'r' )
 
+InFileName4 = 'seqidnondb.fasta'
+InFile4 = open ( InFileName4, 'r' )
 
-Id = 'Nv|XP_001631731.1'
+searchset = set()
+for line in InFile4:
+	if 'Nv' in line:
+		searchset.add('>'+ line)
 
 for Line in InFile3:
-	if Id in Line:
+	if Line in searchset:
 		Line = Line.strip ()
 		print (Line)
-		print next (InFile3)
+		OutFile4.write(Line + '\n' + next (InFile3) )
+
+OutFile4.close()
+
+
+
+
+
+
+#Id = 'Nv|XP_001631731.1'
+
+#for Line in InFile3:
+#	if Id in Line:
+#		Line = Line.strip ()
+#		print (Line)
+#		print next (InFile3)
+
+
+#InFileName = 'Nv.fa'
+#InFile = open ( InFileName, 'r' )
+
+#OutFileName2 = 'sseq.fasta'
+#OutFile2 = open ( OutFileName2, 'w' )
+
+
+#searchset = set()
+#for line in InFile2:
+#	if 'Nv' in line:
+#		print (line)
+#		searchset.add('>'+ line)
+
+#for Line in InFile:
+#	if Line in searchset:
+#		Line = Line.strip ()
+#		print (Line)
+#		OutFile2.write(Line + '\n' + next (InFile) )
+
+#OutFile2.close()
+
+
+
+
+
 
 
 
