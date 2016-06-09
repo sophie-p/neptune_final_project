@@ -2,17 +2,14 @@
 import sys
 import re
 
-
-#arguments = sys.argv
+arguments = sys.argv
 #print (arguments)
 
-#InFileName = sys.argv [1]
-#InFile = open ( InFileName, 'r' )
-
-#get sequences id
-
-InFileName = 'resultstest.fa'
+InFileName = sys.argv [1]
 InFile = open ( InFileName, 'r' )
+
+#InFileName = 'resultstest.fa'
+#InFile = open ( InFileName, 'r' )
 
 OutFileName = 'resultsblast.fa'
 OutFile = open(OutFileName, 'w')
@@ -55,7 +52,7 @@ OutFile3.close()
 InFileName3 = 'Nv.fa'
 InFile3 = open ( InFileName3, 'r' )
 
-InFileName4 = 'seqidnondb.fasta'
+InFileName4 = 'seqidnodb.fa'
 InFile4 = open ( InFileName4, 'r' )
 
 searchset = set()
