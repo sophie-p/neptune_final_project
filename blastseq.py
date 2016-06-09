@@ -47,7 +47,6 @@ for line in InFile2:
 	LineNumbre = LineNumbre + 1
 	if LineNumbre > 1:
 		if line not in lines_seen: 
-			print(line)
 			OutFile3.write (line + '\n')
 			lines_seen.add(line)
 
@@ -61,7 +60,7 @@ InFile4 = open ( InFileName4, 'r' )
 
 searchset = set()
 for line in InFile4:
-	if 'Nv' in line:
+	if '00' in line:
 		searchset.add('>'+ line)
 
 for Line in InFile3:
@@ -72,50 +71,8 @@ for Line in InFile3:
 
 OutFile4.close()
 
-
-
-
-
-
-#Id = 'Nv|XP_001631731.1'
-
-#for Line in InFile3:
-#	if Id in Line:
-#		Line = Line.strip ()
-#		print (Line)
-#		print next (InFile3)
-
-
-#InFileName = 'Nv.fa'
-#InFile = open ( InFileName, 'r' )
-
-#OutFileName2 = 'sseq.fasta'
-#OutFile2 = open ( OutFileName2, 'w' )
-
-
-#searchset = set()
-#for line in InFile2:
-#	if 'Nv' in line:
-#		print (line)
-#		searchset.add('>'+ line)
-
-#for Line in InFile:
-#	if Line in searchset:
-#		Line = Line.strip ()
-#		print (Line)
-#		OutFile2.write(Line + '\n' + next (InFile) )
-
-#OutFile2.close()
-
-
-
-
-
-
-
-
 OutFile.close()
-
-
-
-
+InFile.close()
+InFile2.close()
+InFile3.close()
+InFile4.close()
