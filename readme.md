@@ -24,13 +24,29 @@ OK, here we go.
 
 ## Introduction and Goals
 
-I would like to build a phylogenetic tree of the cnidarians tropomyosin to identify the tropomyosin genes of Nematostella vectensis. 
+I would like to build a phylogenetic tree of the cnidarians tropomyosin to identify the tropomyosin (tpm) genes of Nematostella vectensis. 
 
 First I will look on the pubmed database for some well characterised tropomyosins sequences. Those sequences will be used as query for the blast search. Then I will write a program allowing to find tropomyosin genes from the genomes of several cnidarians (Nematostella, Hydra, Acropora..) using a blast search and save the sequences in a fasta file. Finally I will build the phylogenetic tree. 
 
 The data I will use are published genome and transcriptome from cnidarians. 
 
 ## Methods
+
+I first copied the mRNA sequences of tpm from Clytia hemisphaerica, Podocoryne carnea and 1 from Nematostella vectensis from the NCBI database and combined them into a fasta file (Tpmqueryblast.fasta).
+
+Then I performed a blastx search against the proteome of Nematostella, using the Tpm sequences from NCBI as query. 
+The first step is to create a database from the proteome file with the following cocmmand line: makeblastdb -in Nv.fa -dbtype 'prot'
+3 files are created.
+The blastsearch is launched using: blastx -db Nv.fa.p* -query Tpmqueryblast.fasta -evalue 0.1 -outfmt 6 -out results.out
+
+To get the query sequence, the matching sequence in Nematostella, and the evalue, I wrote the miniprogram called sseqidevalue.py.
+To get only the sequence id of nematostella, I wrote the miniprogram called sseqid.py.
+Some sequences id appear several times, the duplicates can be removed using the miniprogram rmdb.py.
+Finally to get the sequences corresponding to the id, I wrote the miniprogram called idtoseq.py.
+
+Then I combined all the miniprogram into a bigger program called blastseq.py, permitting to get directly from the blast result a fasta file with the protein sequences.
+
+
 
 The tools I used were... See analysis files at (links to analysis files).
 
