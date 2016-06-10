@@ -1,0 +1,11 @@
+Query seq.: gi|656558131|gb|GBGP01000346.1| Subj. seq.: Hv|828217013 Evalue : 6e-11
+Query seq.: gi|656558131|gb|GBGP01000346.1| Subj. seq.: Hv|828214484 Evalue : 3e-09
+Query seq.: gi|397471|emb|X71418.1| Subj. seq.: Hv|828217013 Evalue : 5e-23
+Query seq.: gi|397471|emb|X71418.1| Subj. seq.: Hv|828195644 Evalue : 9e-23
+Query seq.: gi|397471|emb|X71418.1| Subj. seq.: Hv|828214484 Evalue : 2e-21
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Hv|221132153 Evalue : 4e-39
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Hv|221132155 Evalue : 5e-35
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Hv|828195644 Evalue : 4e-33
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Hv|828217013 Evalue : 5e-29
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Hv|828214484 Evalue : 2e-19
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Hv|221132153 Evalue : 3e-04

@@ -11,16 +11,22 @@ InFile = open ( InFileName, 'r' )
 #InFileName = 'resultstest.fa'
 #InFile = open ( InFileName, 'r' )
 
-OutFileName = 'resultsblast.fa'
+InFileName3 = sys.argv [2]
+InFile3 = open ( InFileName3, 'r' )
+
+#InFileName3 = 'Nv.fa'
+#InFile3 = open ( InFileName3, 'r' )
+
+OutFileName = 'resultsblast' + InFileName3
 OutFile = open(OutFileName, 'w')
 
-OutFileName2 = 'seqid.fa'
+OutFileName2 = 'seqid' + InFileName3
 OutFile2 = open(OutFileName2, 'w')
 
-OutFileName3 = 'seqidnodb.fa'
+OutFileName3 = 'seqidnodb'+ InFileName3
 OutFile3 = open(OutFileName3, 'w')
 
-OutFileName4 = 'seqprotein.fa'
+OutFileName4 = 'seqprotein'+ InFileName3
 OutFile4 = open(OutFileName4, 'w')
 
 
@@ -48,11 +54,6 @@ for line in InFile2:
 
 OutFile3.close()
 
-#InFileName3 = 'Nv.fa'
-#InFile3 = open ( InFileName3, 'r' )
-
-InFileName3 = sys.argv [2]
-InFile3 = open ( InFileName3, 'r' )
 
 InFileName4 = 'seqidnodb.fa'
 InFile4 = open ( InFileName4, 'r' )
@@ -67,6 +68,8 @@ for Line in InFile3:
 		Line = Line.strip ()
 		print (Line)
 		OutFile4.write(Line + '\n' + next (InFile3) )
+
+print 'Protein sequences in file: '+ OutFileName4
 
 OutFile4.close()
 
