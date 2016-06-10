@@ -2,14 +2,14 @@
 import sys
 import re
 
-arguments = sys.argv
+#arguments = sys.argv
 #print (arguments)
 
-InFileName = sys.argv [1]
-InFile = open ( InFileName, 'r' )
-
-#InFileName = 'resultstest.fa'
+#InFileName = sys.argv [1]
 #InFile = open ( InFileName, 'r' )
+
+InFileName = 'resultstest.fa'
+InFile = open ( InFileName, 'r' )
 
 OutFileName = 'resultsblast.fa'
 OutFile = open(OutFileName, 'w')
@@ -33,7 +33,6 @@ for Line in InFile:
 	OutFile2.write (SeqId + '\n')
 	
 OutFile2.close()
-#remove double sequences	
 
 InFileName2 = 'seqid.fa'
 InFile2 = open ( InFileName2, 'r' )
@@ -44,7 +43,7 @@ for line in InFile2:
 	LineNumbre = LineNumbre + 1
 	if LineNumbre > 1:
 		if line not in lines_seen: 
-			OutFile3.write (line + '\n')
+			OutFile3.write ('>' + line + '\n')
 			lines_seen.add(line)
 
 OutFile3.close()
@@ -58,7 +57,7 @@ InFile4 = open ( InFileName4, 'r' )
 searchset = set()
 for line in InFile4:
 	if '00' in line:
-		searchset.add('>'+ line)
+		searchset.add(line)
 
 for Line in InFile3:
 	if Line in searchset:

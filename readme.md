@@ -52,6 +52,8 @@ The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
+5 sequences from Nematostella
+
 ![Figure 1](./Figure1.png?raw=true)
 
 In Figure 1...
