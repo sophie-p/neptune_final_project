@@ -46,7 +46,7 @@ Finally to get the sequences corresponding to the id, I wrote the miniprogram ca
 
 Then I combined all the miniprogram into a bigger program called blastseq.py, permitting to get directly from the blast result a fasta file with the protein sequences. This program needs 2 files as input: the file with the blast results and the proteome databasese. In the output files are the blast results with evalue, the sequences id, and the protein sequences.
 
-(The shell command blastdbcmd can also be used to get the sequences from the database file.)
+(The command blastdbcmd can also be used to get the sequences from the database file.)
 
 ## Results / Discussion
 
@@ -57,6 +57,8 @@ The blast search results are:
 
 However, the Evalue used for the search is high (0,1), therefore, I need to check whether the sequences are tropomyosin.
 I will keep only sequences having the tropomyosin domain and with tropomyosin sequences as results of a reciprocal blast.
+
+All the sequences match a tropomyosin domain from the pfam database.
 
 To build the phylogenetic tree, I will also need to get sequences from other cnidarian like Aiptasia, Aurelia, Clytia...
 
