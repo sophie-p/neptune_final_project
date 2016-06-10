@@ -2,14 +2,14 @@
 import sys
 import re
 
-#arguments = sys.argv
+arguments = sys.argv
 #print (arguments)
 
-#InFileName = sys.argv [1]
-#InFile = open ( InFileName, 'r' )
-
-InFileName = 'resultstest.fa'
+InFileName = sys.argv [1]
 InFile = open ( InFileName, 'r' )
+
+#InFileName = 'resultstest.fa'
+#InFile = open ( InFileName, 'r' )
 
 OutFileName = 'resultsblast.fa'
 OutFile = open(OutFileName, 'w')
@@ -48,7 +48,10 @@ for line in InFile2:
 
 OutFile3.close()
 
-InFileName3 = 'Nv.fa'
+#InFileName3 = 'Nv.fa'
+#InFile3 = open ( InFileName3, 'r' )
+
+InFileName3 = sys.argv [2]
 InFile3 = open ( InFileName3, 'r' )
 
 InFileName4 = 'seqidnodb.fa'
@@ -56,7 +59,7 @@ InFile4 = open ( InFileName4, 'r' )
 
 searchset = set()
 for line in InFile4:
-	if '00' in line:
+	if '>' in line:
 		searchset.add(line)
 
 for Line in InFile3:
