@@ -17,7 +17,7 @@ I first copied the mRNA sequences of tpm from Clytia hemisphaerica, Podocoryne c
 Then I performed a blastx search against the proteome of Nematostella, using the Tpm sequences from NCBI as query with the Blast Standalone program from NCBI.
 The first step is to create a database from the proteome file with the following cocmmand line: makeblastdb -in Nv.fa -dbtype 'prot'
 3 files are created.
-The blastsearch is launched using: blastx -db Nv.fa.p* -query Tpmqueryblast.fasta -evalue 0.1 -outfmt 6 -out results.out
+The blastsearch is launched using: blastx -db Nv.fa -query Tpmqueryblast.fasta -evalue 0.1 -outfmt 6 -out results.out
 
 To get the query sequence, the matching sequence in Nematostella, and the evalue, I wrote the miniprogram with python called sseqidevalue.py.
 To get only the sequence id of nematostella, I wrote the miniprogram called sseqid.py.
