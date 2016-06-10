@@ -52,6 +52,8 @@ for line in InFile2:
 		if line not in lines_seen: 
 			OutFile3.write ('>' + line + '\n')
 			lines_seen.add(line)
+SeqNumbre = len (lines_seen)
+print 'Numbre of sequences: ' + str(SeqNumbre) 
 
 OutFile3.close()
 
