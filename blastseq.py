@@ -7,12 +7,13 @@ arguments = sys.argv
 
 InFileName = sys.argv [1]
 InFile = open ( InFileName, 'r' )
-
+print 'Results of blast search: ' + InFileName
 #InFileName = 'resultstest.fa'
 #InFile = open ( InFileName, 'r' )
 
 InFileName3 = sys.argv [2]
 InFile3 = open ( InFileName3, 'r' )
+print 'Proteome database: ' + InFileName3
 
 #InFileName3 = 'Nv.fa'
 #InFile3 = open ( InFileName3, 'r' )
@@ -23,7 +24,7 @@ OutFile = open(OutFileName, 'w')
 OutFileName2 = 'seqid' + InFileName3
 OutFile2 = open(OutFileName2, 'w')
 
-OutFileName3 = 'seqidnodb'+ InFileName3
+OutFileName3 = 'seqid'+ InFileName3
 OutFile3 = open(OutFileName3, 'w')
 
 OutFileName4 = 'seqprotein'+ InFileName3
@@ -40,7 +41,7 @@ for Line in InFile:
 	
 OutFile2.close()
 
-InFileName2 = 'seqid.fa'
+InFileName2 = OutFileName2
 InFile2 = open ( InFileName2, 'r' )
 
 LineNumbre = 0
@@ -55,7 +56,7 @@ for line in InFile2:
 OutFile3.close()
 
 
-InFileName4 = 'seqidnodb.fa'
+InFileName4 = OutFileName3
 InFile4 = open ( InFileName4, 'r' )
 
 searchset = set()
@@ -70,6 +71,8 @@ for Line in InFile3:
 		OutFile4.write(Line + '\n' + next (InFile3) )
 
 print 'Protein sequences in file: '+ OutFileName4
+print 'Sequences Id in file: '+ OutFileName3
+print 'Blast results with Evalue in file: '+ OutFileName
 
 OutFile4.close()
 

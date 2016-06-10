@@ -1,0 +1,9 @@
+Query seq.: gi|656558131|gb|GBGP01000346.1| Subj. seq.: Ad|XP_015754012.1 Evalue : 2e-05
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Ad|XP_015753349.1 Evalue : 2e-11
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Ad|XP_015747755.1 Evalue : 2e-07
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Ad|XP_015748610.1 Evalue : 3e-07
+Query seq.: gi|5869935|emb|AJ249302.1| Subj. seq.: Ad|XP_015768983.1 Evalue : 0.030
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Ad|XP_015753944.1 Evalue : 9e-31
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Ad|XP_015754012.1 Evalue : 3e-16
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Ad|XP_015768983.1 Evalue : 5e-12
+Query seq.: gi|38569884|gb|AY465182.1| Subj. seq.: Ad|XP_015748610.1 Evalue : 0.098
