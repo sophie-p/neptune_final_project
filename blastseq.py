@@ -21,7 +21,7 @@ print 'Proteome database: ' + InFileName3
 OutFileName = 'resultsblast' + InFileName3
 OutFile = open(OutFileName, 'w')
 
-OutFileName2 = 'seqid' + InFileName3
+OutFileName2 = 'seqiddb' + InFileName3
 OutFile2 = open(OutFileName2, 'w')
 
 OutFileName3 = 'seqid'+ InFileName3

@@ -44,15 +44,17 @@ To get only the sequence id of nematostella, I wrote the miniprogram called sseq
 Some sequences id appear several times, the duplicates can be removed using the miniprogram rmdb.py.
 Finally to get the sequences corresponding to the id, I wrote the miniprogram called idtoseq.py.
 
-Then I combined all the miniprogram into a bigger program called blastseq.py, permitting to get directly from the blast result a fasta file with the protein sequences.
+Then I combined all the miniprogram into a bigger program called blastseq.py, permitting to get directly from the blast result a fasta file with the protein sequences. This program needs 2 files as input: the file with the blast results and the proteome databasese. The output files contain the blast results with evalue, the sequences id, and the protein sequences.
 
 
-
-The tools I used were... See analysis files at (links to analysis files).
 
 ## Results
 
 5 sequences from Nematostella
+5 from Hydra
+6 from Acropora
+
+e-value used is high => need to check whether those sequences have the tropomyosin domain
 
 ![Figure 1](./Figure1.png?raw=true)
 
